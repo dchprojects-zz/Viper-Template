@@ -1,5 +1,5 @@
 ## VIPER diagram overview
-![Preview](/Module\ Viper//assets/viper_diagram.png)
+![Preview](/Module%20Viper/assets/viper_diagram.png)
 
 
 
