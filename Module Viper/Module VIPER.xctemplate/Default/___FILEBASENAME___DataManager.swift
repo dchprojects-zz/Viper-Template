@@ -15,13 +15,12 @@ protocol ___VARIABLE_productName: identifier___DataManagerOutputProtocol: AnyObj
 }
 
 protocol ___VARIABLE_productName: identifier___DataManagerProtocol: ___VARIABLE_productName: identifier___DataManagerInputProtocol {
-    var dataProvider: ___VARIABLE_productName: identifier___DataProviderProtocol { get }
     var dataManagerOutput: ___VARIABLE_productName: identifier___DataManagerOutputProtocol? { get set }
 }
 
 final class ___VARIABLE_productName:identifier___DataManager: ___VARIABLE_productName:identifier___DataManagerProtocol {
     
-    internal let dataProvider: ___VARIABLE_productName: identifier___DataProviderProtocol
+    fileprivate let dataProvider: ___VARIABLE_productName: identifier___DataProviderProtocol
     internal weak var dataManagerOutput: ___VARIABLE_productName: identifier___DataManagerOutputProtocol?
     
     init(dataProvider: ___VARIABLE_productName: identifier___DataProviderProtocol) {
@@ -31,5 +30,10 @@ final class ___VARIABLE_productName:identifier___DataManager: ___VARIABLE_produc
     deinit {
         debugPrint(#function, Self.self)
     }
+    
+}
+
+// MARK: - ___VARIABLE_productName:identifier___DataManagerInputProtocol
+extension ___VARIABLE_productName:identifier___DataManager: ___VARIABLE_productName:identifier___DataManagerInputProtocol {
     
 }

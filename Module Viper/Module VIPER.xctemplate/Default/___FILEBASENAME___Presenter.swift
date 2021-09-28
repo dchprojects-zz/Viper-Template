@@ -40,6 +40,11 @@ final class ___VARIABLE_productName:identifier___Presenter: NSObject, ___VARIABL
 }
 
 // MARK: - ___VARIABLE_productName:identifier___InteractorOutputProtocol
-extension ___VARIABLE_productName:identifier___Presenter {
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol {
+    
+}
+
+// MARK: - ___VARIABLE_productName:identifier___PresenterInputProtocol
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresenterInputProtocol {
     
 }
